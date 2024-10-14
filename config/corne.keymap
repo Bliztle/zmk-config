@@ -18,7 +18,7 @@
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <500>;
-            hold-trigger-key-positions = <39 40 41 30 18 6 7 31 19 20 8 32 33 21 9 10 22 34 35 23 11 38 37 36>;
+            hold-trigger-key-positions = <30 18 6 7 31 19 20 8 32 33 21 9 10 22 34 35 23 11>;
             quick-tap-ms = <200>;
             hold-trigger-on-release;
         };
@@ -32,7 +32,7 @@
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <500>;
             quick-tap-ms = <200>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
             hold-trigger-on-release;
         };
     };
