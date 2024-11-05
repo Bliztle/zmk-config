@@ -60,7 +60,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        colemak_dh {
+        colemak_dh_ish {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -68,9 +68,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q               &kp W               &kp F            &kp P             &kp B          &kp J      &kp L            &kp U            &kp Y               &kp SEMI        &trans
+&trans  &kp Q               &kp W               &kp F            &kp P             &kp B          &kp U      &kp J            &kp K            &kp Y               &kp SEMI        &trans
 &trans  &lh_pht LEFT_GUI A  &lh_pht LEFT_ALT R  &lh_pht LCTRL S  &lh_pht LSHIFT T  &kp G          &kp M      &rh_pht RSHFT N  &rh_pht RCTRL E  &rh_pht LEFT_ALT I  &rh_pht RGUI O  &kp SQT
-&trans  &kp Z               &lh_pht RALT X      &kp C            &kp D             &kp V          &kp K      &kp H            &kp COMMA        &rh_pht RALT DOT    &kp FSLH        &trans
+&trans  &kp Z               &lh_pht RALT X      &kp C            &kp D             &kp V          &kp COMMA  &kp H            &kp L            &rh_pht RALT DOT    &kp FSLH        &trans
                                                 &kp TAB          &lt 3 ESC         &lt 1 SPACE    &lt 1 RET  &kp BACKSPACE    &kp DEL
             >;
         };
