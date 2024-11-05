@@ -65,7 +65,7 @@
 &trans  &kp Q               &kp W               &kp F            &kp P             &kp B           &kp U       &kp J             &kp K            &kp Y               &kp SEMI        &trans
 &trans  &lh_pht LEFT_GUI A  &lh_pht LEFT_ALT R  &lh_pht LCTRL S  &lh_pht LSHIFT T  &kp G           &kp M       &rh_pht RSHFT N   &rh_pht RCTRL E  &rh_pht LEFT_ALT I  &rh_pht RGUI O  &kp SQT
 &trans  &kp Z               &lh_pht RALT X      &kp C            &kp D             &kp V           &kp COMMA   &kp H             &kp L            &rh_pht RALT DOT    &kp FSLH        &trans
-                                                &lt 19 ESC       &lt 18 ESC        &lt 16 SPACE    &lt 13 RET  &lt 14 BACKSPACE  &lt 15 DEL
+                                                &lt 19 TAB       &lt 18 ESC        &lt 16 SPACE    &lt 13 RET  &lt 14 BACKSPACE  &lt 15 DEL
             >;
         };
 
