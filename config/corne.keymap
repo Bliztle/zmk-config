@@ -147,8 +147,8 @@
         layers {
             bindings = <
 &trans  &to 7   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &to 12  &trans  &to 9     &to 0   &to 6   &to 7   &to 8   &trans  &trans
-&trans  &trans  &trans  &to 12  &trans  &to 6     &trans  &to 1   &to 2   &to 4   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &to 9     &to 0   &to 6   &to 7   &to 8   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &to 6     &trans  &to 1   &to 2   &to 4   &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
@@ -180,12 +180,66 @@
             >;
         };
 
-        dvorak {
+        m_colemak_dh {
             bindings = <
-&trans  &kp SEMICOLON   &kp COMMA       &kp PERIOD  &kp P      &kp Y          &kp F        &kp G          &kp C    &kp R  &kp L  &trans
-&trans  &lh_pht LGUI A  &lh_pht LALT O  &kp E       &kp U      &kp I          &kp D        &kp H          &kp T    &kp N  &kp S  &trans
-&trans  &kp SQT         &kp Q           &kp J       &kp K      &kp X          &kp B        &kp M          &kp W    &kp V  &kp Z  &trans
-                                        &kp TAB     &lt 4 ESC  &lt 2 SPACE    &lt 1 ENTER  &kp BACKSPACE  &kp DEL
+&trans  &kp Q               &kp W               &kp F            &kp P             &kp B           &kp U       &kp J             &kp K            &kp Y               &kp SEMI        &trans
+&trans  &lh_pht LEFT_GUI A  &lh_pht LEFT_ALT R  &lh_pht LCTRL S  &lh_pht LSHIFT T  &kp G           &kp M       &rh_pht RSHFT N   &rh_pht RCTRL E  &rh_pht LEFT_ALT I  &rh_pht RGUI O  &kp SQT
+&trans  &kp Z               &lh_pht RALT X      &kp C            &kp D             &kp V           &kp COMMA   &kp H             &kp L            &rh_pht RALT DOT    &kp FSLH        &trans
+                                                &lt 18 ESC       &lt 17 ESC        &lt 16 SPACE    &lt 13 RET  &lt 14 BACKSPACE  &lt 15 DEL
+            >;
+        };
+
+        m_sym {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        m_num {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        m_fun {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        m_special {
+            bindings = <
+&trans  &kp LG(N1)        &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &hl_ts 11 LSHIFT  &kp LG(H)   &kp LG(J)   &kp LG(K)   &kp LG(L)     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(N6)        &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)    &trans  &trans  &trans  &trans  &trans  &trans
+                                      &trans      &trans      &trans        &trans  &trans  &trans
+            >;
+        };
+
+        m_nav {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        m_media {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
