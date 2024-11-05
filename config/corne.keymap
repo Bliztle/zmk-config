@@ -185,7 +185,7 @@
 &trans  &kp Q               &kp W               &kp F            &kp P             &kp B           &kp U       &kp J             &kp K            &kp Y               &kp SEMI        &trans
 &trans  &lh_pht LEFT_GUI A  &lh_pht LEFT_ALT R  &lh_pht LCTRL S  &lh_pht LSHIFT T  &kp G           &kp M       &rh_pht RSHFT N   &rh_pht RCTRL E  &rh_pht LEFT_ALT I  &rh_pht RGUI O  &kp SQT
 &trans  &kp Z               &lh_pht RALT X      &kp C            &kp D             &kp V           &kp COMMA   &kp H             &kp L            &rh_pht RALT DOT    &kp FSLH        &trans
-                                                &lt 18 ESC       &lt 17 ESC        &lt 16 SPACE    &lt 13 RET  &lt 14 BACKSPACE  &lt 15 DEL
+                                                &lt 19 ESC       &lt 18 ESC        &lt 16 SPACE    &lt 13 RET  &lt 14 BACKSPACE  &lt 15 DEL
             >;
         };
 
@@ -225,21 +225,30 @@
             >;
         };
 
+        m_special_lower {
+            bindings = <
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans     &trans     &trans    &trans  &trans  &trans
+            >;
+        };
+
         m_nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp CAPSLOCK  &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans    &trans         &trans     &trans     &trans
+                        &trans  &trans  &trans    &trans        &trans    &trans
             >;
         };
 
         m_media {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans            &trans        &trans        &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp C_PREV        &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans            &trans        &trans        &trans      &trans
+                        &trans  &trans  &trans    &kp C_RECORD  &kp C_PLAY_PAUSE  &kp C_MUTE
             >;
         };
     };
