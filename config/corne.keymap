@@ -82,6 +82,17 @@
             tapping-term-ms = <1000>;
             quick-tap-ms = <200>;
         };
+
+        lt_qt: lt_qt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_QT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -99,10 +110,10 @@
 
         m_colemak_dh {
             bindings = <
-&trans  &kp Q                 &kp W                 &kp F              &kp P               &kp B           &kp J       &kp L              &kp U              &kp Y                 &kp SEMI          &trans
-&trans  &balanced LEFT_GUI A  &balanced LEFT_ALT R  &balanced LCTRL S  &balanced LSHIFT T  &kp G           &kp M       &balanced RSHFT N  &balanced RCTRL E  &balanced LEFT_ALT I  &balanced RGUI O  &kp SQT
-&trans  &kp Z                 &balanced RALT X      &kp C              &kp D               &kp V           &kp K       &kp H              &kp COMMA          &balanced RALT DOT    &kp FSLH          &trans
-                                                    &lt 19 TAB         &lt 18 ESC          &lt 16 SPACE    &lt 13 RET  &lt 14 BACKSPACE   &lt 15 DEL
+&trans  &kp Q                 &kp W                 &kp F              &kp P               &kp B              &kp J          &kp L                &kp U              &kp Y                 &kp SEMI          &trans
+&trans  &balanced LEFT_GUI A  &balanced LEFT_ALT R  &balanced LCTRL S  &balanced LSHIFT T  &kp G              &kp M          &balanced RSHFT N    &balanced RCTRL E  &balanced LEFT_ALT I  &balanced RGUI O  &kp SQT
+&trans  &kp Z                 &balanced RALT X      &kp C              &kp D               &kp V              &kp K          &kp H                &kp COMMA          &balanced RALT DOT    &kp FSLH          &trans
+                                                    &lt_qt 19 TAB      &lt_qt 18 ESC       &lt_qt 16 SPACE    &lt_qt 13 RET  &lt_qt 14 BACKSPACE  &lt_qt 15 DEL
             >;
         };
 
