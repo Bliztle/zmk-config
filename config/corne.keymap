@@ -237,9 +237,9 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        lower_raise {
-            if-layers = <13 13>;
-            then-layer = <14>;
+        layer_nav {
+            if-layers = <3 6>;
+            then-layer = <13>;
         };
     };
 };
