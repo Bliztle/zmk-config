@@ -6,5 +6,5 @@ List of bluetooth profiles, kept as up to date as realistically possible
 
 | Profile | Device    |
 | ------- | --------- |
-| 1       | Zenbook   |
-| 2       | Framework |
+| 1       | Framework |
+| 2       | Desktop   |
